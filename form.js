@@ -77,6 +77,12 @@ let validateInput = function(el) {
         if (errorElement) {
             errorElement.style.display = isValid ? "none" : "block";
         }
+    } else if (elementName === 'drinkValue'){
+        var checkbox = document.querySelector('#drinkCheckBox');
+        if(checkbox.checked)
+        {
+            isValid = el.value.trim().length > 0;
+        }
     }
 
     if (elementName !== 'source') {
@@ -127,7 +133,7 @@ let checkFormValidity = function() {
 
     const checkboxes = form.querySelectorAll('input[type=checkbox]');
     let checkboxValidation = Array.from(checkboxes).some(checkbox => checkbox.checked);
-
+    
     inputs.forEach(input => {
         if (!input.checkValidity()) {
             allValid = false;
