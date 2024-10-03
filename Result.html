@@ -1,151 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Details</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: beige;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            color: #34495e;
-            font-size: 2.5rem;
-            margin-top: 20px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 80%;
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        th, td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #34495e;
-            color: white;
-            font-weight: bold;
-        }
-
-        td:first-of-type {
-            font-weight: bold;
-            background-color: #ecf0f1;
-            width: 35%;
-        }
-
-        td {
-            background-color: #ffffff;
-        }
-
-        tr:hover {
-            background-color: #f1f1f1;
-        }
-
-        @media (max-width: 768px) {
-            table {
-                width: 100%;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
-            th, td {
-                padding: 10px;
-            }
-        }
-    </style>
-    <script src="./result.js"></script>
-</head>
-
-<body>
-    <div>
-        <h1>Details</h1>
-    </div>
-    <div class="container">
-        <table id="table">
+   <head>
+      <title>Details</title>
+      <style>
+         body {
+         font-family: Arial, sans-serif;
+         background-color: beige;
+         margin: 0;
+         padding: 0;
+         }
+         h1 {
+         text-align: center;
+         color: #34495e;
+         font-size: 2.5rem;
+         margin-top: 20px;
+         }
+         .container {
+         display: flex;
+         justify-content: center;
+         padding: 20px;
+         }
+         table {
+         border-collapse: collapse;
+         width: 80%;
+         background-color: #ffffff;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         border-radius: 8px;
+         overflow: hidden;
+         }
+         th, td {
+         padding: 15px;
+         text-align: left;
+         border-bottom: 1px solid #ddd;
+         }
+         th {
+         background-color: #34495e;
+         color: white;
+         font-weight: bold;
+         }
+         td:first-of-type {
+         font-weight: bold;
+         background-color: #ecf0f1;
+         width: 35%;
+         }
+         td {
+         background-color: #ffffff;
+         }
+         tr:hover {
+         background-color: #f1f1f1;
+         }
+         @media (max-width: 768px) {
+         table {
+         width: 100%;
+         }
+         h1 {
+         font-size: 2rem;
+         }
+         th, td {
+         padding: 10px;
+         }
+         }
+      </style>
+      <script src="./result.js"></script>
+   </head>
+   <body>
+      <div>
+         <h1>Details</h1>
+      </div>
+      <div class="container">
+         <table id="table">
             <tbody>
-                <tr>
-                    <td>Title</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>First Name</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Last Name</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Email Id</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Phone Number</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Street Address 1</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Street Address 2</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>City</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>State</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Zip Code</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>How did you know about us</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Comments</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Selected Drink</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Customization</td>
-                    <td></td>
-                </tr>
+               <tr>
+                  <td>Title</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>First Name</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Last Name</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Email Id</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Phone Number</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Street Address 1</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Street Address 2</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>City</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>State</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Zip Code</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>How did you know about us</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Comments</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Selected Drink</td>
+                  <td></td>
+               </tr>
+               <tr>
+                  <td>Customization</td>
+                  <td></td>
+               </tr>
             </tbody>
-        </table>
-    </div>
-</body>
-
+         </table>
+      </div>
+   </body>
 </html>
