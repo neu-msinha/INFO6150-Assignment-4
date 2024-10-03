@@ -1,11 +1,11 @@
 let drinkChange = function(val) {
     const drinkOptions = {
-        'tea': 'Large Black Tea',
-        'coffee': 'Large Coffee',
-        'drink': 'Medium Drink',
-        'cocktail': 'Medium Cocktail',
-        'liquor': 'Small Liquor',
-        'default': 'Medium'
+        'tea': 'Customization for tea',
+        'coffee': 'Customization for coffee',
+        'drink': 'Customization for drink',
+        'cocktail': 'Customization for cocktail',
+        'liquor': 'Customization for liquor',
+        'default': 'Customization'
     };
 
     const lbltxt = drinkOptions[val] || drinkOptions['default'];
@@ -52,8 +52,8 @@ let onCheck = function(el) {
 
 let validateInput = function(el) {
     const validationPatterns = {
-        'firstName': /^[a-zA-Z]+$/,
-        'lastName': /^[a-zA-Z]+$/,
+        'firstName': /^[a-zA-Z]{5,30}$/,
+        'lastName': /^[a-zA-Z]{5,30}$/,
         'emailId': /([\w\.]+)@(northeastern.edu)/,
         'phoneNumber': /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/,
         'zipcode': /^\d{5}$/
@@ -133,7 +133,7 @@ let checkFormValidity = function() {
 
     const checkboxes = form.querySelectorAll('input[type=checkbox]');
     let checkboxValidation = Array.from(checkboxes).some(checkbox => checkbox.checked);
-    
+
     inputs.forEach(input => {
         if (!input.checkValidity()) {
             allValid = false;
