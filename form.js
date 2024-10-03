@@ -87,7 +87,7 @@ let validateInput = function(el) {
 
     if (elementName !== 'source') {
         const errorElement = document.querySelector(`[name=${elementName}]`).nextElementSibling;
-        if (errorElement) {
+        if (errorElement && errorElement.classList.contains("error-msg")) {
             errorElement.style.display = isValid ? "none" : "block";
         }
     }
