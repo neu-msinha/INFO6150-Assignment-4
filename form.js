@@ -134,6 +134,17 @@ let checkFormValidity = function() {
     const checkboxes = form.querySelectorAll('input[type=checkbox]');
     let checkboxValidation = Array.from(checkboxes).some(checkbox => checkbox.checked);
 
+    const drinkCustomization = form.querySelector("input[name='drinkValue']");
+    var checkbox = document.querySelector('#drinkCheckBox');
+        if(checkbox.checked)
+        {
+            var customizationBoxValidation = drinkCustomization.value.trim().length > 0;
+            if(!customizationBoxValidation)
+            {
+                allValid = false;
+            }
+        }
+
     inputs.forEach(input => {
         if (!input.checkValidity()) {
             allValid = false;
